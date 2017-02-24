@@ -1,8 +1,5 @@
 import numpy as np
-
-
-var1, var2 = input("Please enter two integers: ").split()
-var1, var2 = int(var1),int(var2)
+import math
 
 
 def EuclidGCD(var1,var2):
@@ -26,9 +23,35 @@ def EuclidGCD(var1,var2):
     return EuclidGCD(var2,r)
 
 
+def Find_Divisors(var):
+    divisors = []
+
+    for i in range(2, var+1):
+        if var % i == 0:
+            divisors.append(i)
+
+    return divisors
+
+def compare_divisors(var1,var2):
+    divisors1 = Find_Divisors(var1)
+    divisors2 = Find_Divisors(var2)
+
+    best_results = 1
+    for one in divisors1:
+        if one in divisors2:
+            best_results = one
+
+    return best_results
+
+
+var1, var2 = raw_input("Please enter two integers: ").strip().split()
+var1, var2 = int(var1),int(var2)
+
 #run Euclidean algorithm
-print(EuclidGCD(var1,var2))
+print "==== Euclid Method ===="
+print "Results: ",(EuclidGCD(var1,var2))
 
-
-
+#run comparing divisors
+print "=== Compare Divisors ==="
+print "Results: ",(compare_divisors(var1,var2))
 
