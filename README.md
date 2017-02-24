@@ -3,18 +3,18 @@ This is the first project for Analysis of Algorithms. It consists of creating al
 
 TO RUN
 -----------------
---run it with user inputed values
+-run it with user inputed values
 
-  python GCD.py
+    python GCD.py
 
---run it with average times report
+-run it with average times report
 
-  python GCD.py --benchmark
+    python GCD.py --benchmark
 
---run it with bokeh report graphs
+-run it with bokeh report graphs
   * requires bokeh -> (linux: sudo pip install bokeh)
 
-  python GCD.py --benchmark --print-to-bokeh
+    python GCD.py --benchmark --print-to-bokeh
 
 
 
