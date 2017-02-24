@@ -1,0 +1,12 @@
+==== Average Time for Euclids Algorithm =====
+Range 100.0 to 1000.0: avg_time 8 milisecond
+Range 1000.0 to 10000.0: avg_time 8 milisecond
+Range 10000.0 to 100000.0: avg_time 9 milisecond
+Range 100000.0 to 1000000.0: avg_time 11 milisecond
+Range 1000000.0 to 10000000.0: avg_time 6 milisecond
+==== Average Time for Compare Divisors Algorithm =====
+Range 100.0 to 1000.0: avg_time 90 milisecond
+Range 1000.0 to 10000.0: avg_time 665 milisecond
+Range 10000.0 to 100000.0: avg_time 5659 milisecond
+Range 100000.0 to 1000000.0: avg_time 59903 milisecond
+Range 1000000.0 to 10000000.0: avg_time 552157 milisecond
